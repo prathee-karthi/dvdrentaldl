@@ -1,6 +1,6 @@
-#Predicting Customer Behavior in DVD Rental Using Deep Learning with AWS deployment
+Predicting Customer Behavior in DVD Rental Using Deep Learning with AWS deployment
 
-#DVD Rental Dataset Overview
+DVD Rental Dataset Overview
 
 The DVD rental dataset provides a comprehensive view of rental transactions for a fictional DVD rental company. It includes various details such as the DVD title, rental duration, rental rate, film category, customer information, and transaction dates. This dataset offers rich insights into rental patterns, customer preferences, and film popularity.
 
