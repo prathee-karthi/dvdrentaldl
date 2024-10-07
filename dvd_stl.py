@@ -8,8 +8,8 @@ from tensorflow.keras.models import load_model
 
 
 st.set_page_config(
-    page_title="DVD Rental Deep Learning",
-    page_icon='C:\Users\Prathee\Downloads\dl.png'
+    page_title="Predicting Customer Behavior in DVD Rental Using Deep Learning with AWS deployment",
+    page_icon='dl.png'
 )
 
 
@@ -49,7 +49,7 @@ def main():
         st.title("Final Project - DVD Rental Deep Learning")
         
         
-        # rental_duration = st.selectbox("Rental Duration",["Select Rental Duration"]+[3,4,5,6,7])
+        rental_duration = st.selectbox("Rental Duration",["Select Rental Duration"]+[3,4,5,6,7])
         rental_rate =st.slider("Rental_rate", min_value=0, max_value=10)
         length = st.slider("Length of the movie", min_value = 45, max_value=185)
         replacement_cost = st.selectbox("Replacement Cost",["Select Replacement Cost"]+[9.99, 10.99, 11.99, 12.99, 13.99, 14.99, 15.99, 16.99, 17.99, 18.99, 19.99, 20.99, 21.99, 22.99, 23.99, 24.99, 25.99, 26.99, 27.99, 28.99, 29.99])
@@ -67,10 +67,10 @@ def main():
         details1 = []
         
         
-        # if rental_duration != "Rental Duration":
-        #     details1.append(float(rental_duration))
-        # else:
-            # st.warning("Please choose correct any option in body type box")
+        if rental_duration != "Rental Duration":
+            details1.append(float(rental_duration))
+        else:
+            st.warning("Please choose correct any option in body type box")
         if rental_rate:
             details1.append(float(rental_rate))
         if length:
