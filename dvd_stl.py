@@ -45,7 +45,7 @@ def main():
 
         """)
     
-    elif option == "App Page":
+    elif option == "App Page": #dumping the actual predicted values here
         st.title("Final Project - DVD Rental Deep Learning")
         
         
@@ -64,7 +64,7 @@ def main():
         rental_actual_duration = st.slider("Rental_actual_duraton", min_value = 1, max_value=100)
         
 
-        details1 = []
+        details1 = []   #uploading in a list format and appending the same
         
         
         if rental_duration != "Rental Duration":
